@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4</title>
+    <link rel="icon" type="image/png" sizes="128x128" href="assets/favicon.png" />
+    <link rel="stylesheet" href="styles.css"></link>
+    <script src="script.js"></script>
+</head>
+<body>
+  <div>
+    <h1>Connect 4</h1>
+    <div class="container">
+      <div id="side" class="side-parallelogram"></div>
+      <div id="bottom" class="bottom-parallelogram"></div>
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <div class="input-container">
+      <div>
+          <label for="rows">Rows:</label>
+          <input type="number" value="6" id="rows" oninput="handleInputChange('rows')">
+      </div>
+      <div>
+          <label for="columns">Columns:</label>
+          <input type="number" value="7" id="columns" oninput="handleInputChange('columns')">
+      </div>
+      <div>
+        <label for="minimum">Minimum:</label>
+        <input type="number" value="4" id="minimum" oninput="handleInputChange('minimum')">
+    </div>
+  </div>  
+  </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #090c1d;
+  user-select: none;
+
+  }
+
+.side-parallelogram {
+  position: absolute;
+  background-color: #000481;
+  transform: skewY(-20deg);
+}
+
+.bottom-parallelogram {
+  position: absolute;
+  background-color: #000481;
+  transform: skewX(-20deg);
+}
+
+.container {
+    display: flex;
+    position: relative;
+}
+
+label {
+  color: white;
+}
+
+.input-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-container div {
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+}
+
+
+h1 {
+    font-size: 48px;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+
+canvas {
+  height: 75vh;
+  width: 100vh;
+  background-color: black;
+}
